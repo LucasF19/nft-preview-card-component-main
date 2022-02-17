@@ -108,8 +108,12 @@ hr{
 }
 
 .attribution{
-    display: flex;
-    padding: 20px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    padding: 15px;
+    font-size: 15px;
     color: hsl(215, 51%, 70%);
 }
 
@@ -124,7 +128,6 @@ hr{
 
 .attribution span{
     margin-left: 5px;
-    font-size: 12px;
 }
 
 
