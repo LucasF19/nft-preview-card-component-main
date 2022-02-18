@@ -9,11 +9,11 @@
 
 /* IMAGEM FUNDO */
 .fundo{
-    align-items: center;
     background-color: #0d192b;
+    align-items: center;
     display: flex;
-    height: 100vh;
     justify-content: center;
+    height: 100vh;
 }
 
 .card{
@@ -25,8 +25,8 @@
 }
 
 .imagem-card {
-    border-radius: 25px;
     display: block;
+    border-radius: 25px;
     padding: 20px 20px 0px;
     width: 100%;
 }
