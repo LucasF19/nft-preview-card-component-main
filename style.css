@@ -7,31 +7,37 @@
     font-family: 'Outfit', sans-serif;
 }
 
+/* IMAGEM FUNDO */
 .fundo{
-    overflow: hidden;
-    background-color: hsl(217, 54%, 11%);
+    align-items: center;
+    background-color: #0d192b;
+    display: flex;
     height: 100vh;
+    justify-content: center;
 }
 
 .card{
-    position: relative;
-    top: 100px;
-    margin: auto auto;
-    width: 300px;
-    background-color: hsl(216, 50%, 16%);
+    background-color: #14253d;
     border-radius: 15px;
-    box-shadow: 0px 0px 50px 10px hsl(214, 38%, 8%);
+    box-shadow: 0px 0px 50px 10px #0d131c;
+    transform: scale(0.9);
+    width: 300px;
 }
 
 .imagem-card {
-    display: block;
     border-radius: 25px;
-    width: 100%;
+    display: block;
     padding: 20px 20px 0px;
+    width: 100%;
 }
 
 .overlay{
+    background-color: #00ffff7a;
+    border-radius: 5px;
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     opacity: 0;
     top: 0;
     bottom: 0;
@@ -40,24 +46,18 @@
     width: 260px;
     height: 260px;
     margin: 20px 20px 0px;
-    background-color: #008bba36;
     transition: 0.3s ease-in;
 }
 
 .overlay img{
-    position: absolute;
-    top: 80px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 75px;
-    margin: 20px auto;
+    width: 65px;
 }
 
 .imagem-fundo:hover .overlay{
     opacity: 1;
 }
 
+/* CONTEÚDO */
 .content{
     margin: 20px;
 }
@@ -68,17 +68,23 @@
 }
 
 .content h1{
-    padding-bottom: 10px;
-    font-size: 18px;
-    color: hsl(0, 0%, 100%);
+    color: #ffffff;
+    font-size: 22px;
     opacity: 90%;
+    padding-bottom: 10px;   
+    transition: 0.3s;
+}
+
+.content h1:hover{
+    cursor: pointer;
+    color: #00ffff;
 }
 
 .box-content{
     display: flex;
+    font-size: 18px;
     justify-content: space-between;
     margin: 20px 0px;
-    font-size: 18px;
 }
 
 .box-content img{
@@ -87,38 +93,39 @@
 }
 
 .right-side p{
+    color: #8bacda;
     display: flex;
     flex-direction: column;
     font-size: 15px;
-    color: hsl(215, 51%, 70%);
 }
 
 .left-side p{
-    display: flex;
     color: aqua;
-    flex-direction: column;
+    display: flex;
     font-size: 15px;
+    flex-direction: column;
 }
 
 hr{
+    border-color: #2f415b;
     border-style: solid;
     width: 250px;
     margin: 0px auto;
-    border-color: hsl(215, 32%, 27%);
 }
 
+/* ATRIBUITION */
 .attribution{
-    display:flex;
-    justify-content: space-evenly;
     align-items: center;
+    color: #8bacda;
+    display:flex;
+    font-size: 15px;
+    justify-content: space-evenly;
     margin: auto;
     padding: 15px;
-    font-size: 15px;
-    color: hsl(215, 51%, 70%);
 }
 
 .attribution a {
-      color: hsl(228, 45%, 44%);
+    color: #3e52a3;
 }
 
 .attribution img{
